@@ -2,29 +2,6 @@
 
 }
 
-/* 
-body, html {
-    height: 100%;
-}
-
-.background {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/wallpaper-space.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
   /* Nav bar settings. Creates a fixed, full height nav bar on the right. */
 
 header {
@@ -81,6 +58,11 @@ nav a:hover {
     background: url(../images/wallpaper-space.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 
@@ -107,7 +89,7 @@ h4 {
 }
 
 img {
-    width: 20%;
+    width: 30%;
     overflow: hidden;
 }
 
@@ -167,21 +149,28 @@ html {
 }
 /* Image Post */
 
-.image-post {
+.right-image-post {
     margin-top: 60px;
     padding-top: 60px;
     border-top: 2px solid rgba(250, 250, 250, 0.1);
 }
 
-.left-image img {
+.right-image img {
+    width: 100%;
+}
+
+.left-image img,
+.right-image img {
     border-radius: 5px;
 }
 
-.image-post h4 {
+.right-image-post h4,
+.left-image-post h4 {
     margin-top: 30px;
 }
 
-.image-post p {
+.right-image-post p,
+.left-image-post p {
     margin-top: 20px;
 }
 
@@ -250,6 +239,41 @@ html {
 .items-done .fourth-work {
     background-image: url(../images/work4.jpg);
 }
+    /* contact */
+
+
+.contact .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contactlist {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+.contactlist h4 {
+    transition: all 0.5s;
+}
+
+.contactlist p {
+    transition: all 0.5s;
+}
+
+.contactlist:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.contactlist:hover h4 {
+    color: #1e1e1e;
+}
+
+.contactlist:hover p {
+    color: #4a4a4a;
+}
+
 
 
 @media screen and (max-width: 1280px) {
