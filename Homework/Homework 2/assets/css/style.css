@@ -96,14 +96,26 @@ nav a:hover {
 
 .work {
     display: grid;
-    grid-template-columns: 250px 3fr;
+    grid-template-columns: 250px 750px ;
     /* border: 1px solid black; */
+}
+
+.diffwork {
+    display: grid;
+    grid-template-columns: 450px repeat(4, 250px);
+    
+
 }
 
 .contact {
     display: grid;
-    grid-template-columns: repeat(5, 250px);
+    grid-template-columns: 250px 750px;
     /* border: 1px solid black; */
+}
+
+.contactlist {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
 }
 
 /* Tweaks to individual contents in each section for better alignment */
@@ -120,16 +132,33 @@ section h2 {
     width: 250px;
 }
 
+section .firstwork {
+    /* padding-top: 40%; */
+    padding-right: 50%;
+}
+
+section h3 {
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    /* padding-top: 75%; */
+    padding-right: 30%;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 section h4 {
     font-size: 24px;
     padding: 20px;
-    margin: 10px 10px;
+    margin: 5%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-p {
-    font-size: 16px;
+.aboutpara {
+    font-size: 24px;
     padding-left: 20px;
     margin: 5px;
     left: 750px;
