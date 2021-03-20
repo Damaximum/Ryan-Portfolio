@@ -1,0 +1,340 @@
+:root {
+
+}
+
+/* 
+body, html {
+    height: 100%;
+}
+
+.background {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/wallpaper-space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Nav bar settings. Creates a fixed, full height nav bar on the right. */
+
+header {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 59, 59);
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+/* Styling the h1 and rest of the nav bar. */
+header h1 {
+    padding: 8px 8px 32px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    display: block;
+}
+
+nav a strong {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+    display: block;
+}
+
+nav li a small {
+    display: block;
+    font: 10px;
+    opacity: 0.5;
+}
+
+ /* stylises all [a] and [worklist] class in nav */
+nav a, .nav {
+    display: block;
+    color: rgb(128, 128, 128);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Colour change when links are hovered over. */
+nav a:hover {
+    color: black;
+    background-color: lightgrey;
+    border-right: 6px solid #e67e22;
+}
+
+/* ===================================================================================== */
+#background {
+    background: url(../images/wallpaper-space.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 251, 214);
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(255, 251, 214);
+    letter-spacing: 0.25px;
+}
+
+img {
+    width: 20%;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Section */
+.section {
+    color: rgb(255, 251, 214);
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+
+.section-heading {
+    text-align: center;
+    padding: 80px 45px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section-heading .line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: #a43f49;
+    margin: 10px auto;
+}
+
+.section-heading span {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(255, 251, 214);
+    letter-spacing: 0.5px;
+}
+/* Image Post */
+
+.image-post {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.left-image img {
+    border-radius: 5px;
+}
+
+.image-post h4 {
+    margin-top: 30px;
+}
+
+.image-post p {
+    margin-top: 20px;
+}
+
+
+/* Works */
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.my-work .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.items-done {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+.items-done h4 {
+    transition: all 0.5s;
+}
+
+.items-done p {
+    transition: all 0.5s;
+}
+
+.items-done:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.items-done:hover h4 {
+    color: #1e1e1e;
+}
+
+.items-done:hover p {
+    color: #4a4a4a;
+}
+
+.items-done .work-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.items-done .first-work {
+    background-image: url(../images/work1.jpg);
+}
+
+.items-done .second-work {
+    background-image: url(../images/work2.jpg);
+}
+
+.items-done .third-work {
+    background-image: url(../images/work3.jpg);
+}
+
+.items-done .fourth-work {
+    background-image: url(../images/work4.jpg);
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*===================================================================================== */
+
+/* Footer Styling */
+
+footer {
+    width: 100%;
+    position: fixed;
+    margin-left: 250px;
+    z-index: 2;
+    bottom: 0;
+    background-color: #e67e22;
+    padding: 10px;
+}
+
+footer h5 {
+    text-align: center;
+    font: 30px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/*===================================================================================== */
+
+
+
+@media screen and (max-height: 450px) {
+    header {padding-top: 15px;}
+    header h1 {font: 32px;}
+    header a {font-size: 18px;}
+
+  }
+
+@media screen and (max-width: 900px) {
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+
+header li a {
+    float: left;
+    padding: 15px;
+}
+
+div.content {margin-left: 0;}
+
+footer {margin-left: 0%;}
+}
+
+@media screen and (max-width: 400px) {
+header li a {
+    text-align: center;
+    float: none;
+}
+}
+
+
+@media screen and (max-width: 1024px) { 
+    .background {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
