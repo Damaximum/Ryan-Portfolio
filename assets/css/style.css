@@ -80,6 +80,11 @@ body {
 a,
 a:hover {
     text-decoration: none;
+    display: block;
+}
+
+a:visited {
+    color: inherit;
 }
 
 p {
@@ -231,6 +236,17 @@ html {
     transition: all 0.5s;
 }
 
+.first-work { 
+    width: 100%;
+    display: block;
+}
+
+.first-work a {
+    color: var(--highlight);
+}
+
+/* My work items images. */
+
 .items-done .first-work {
     background-image: url(../images/work1.jpg);
 }
@@ -246,6 +262,11 @@ html {
 .items-done .fourth-work {
     background-image: url(../images/work4.jpg);
 }
+
+.items-done .fifth-work {
+    background-image: url(../images/6\ -\ Wkm9QFO.jpg);
+}
+
     /* contact */
 
 
@@ -283,24 +304,7 @@ html {
 
 
 
-@media screen and (max-width: 1280px) {
 
-    .right-image-post h4,
-    .left-image-post h4 {
-        margin-top: 0px;
-    }
-
-    .right-image-post p,
-    .left-image-post p {
-        margin-top: 15px;
-    }
-
-}
-
-.container {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 /*===================================================================================== */
 
@@ -329,7 +333,44 @@ footer h5 {
 
 /*===================================================================================== */
 
+@media screen and (max-width: 1280px) {
 
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+    .background {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        
+    }
+    
+    header li a {
+        float: left;
+        padding: 15px;
+    }
 
 @media screen and (max-height: 450px) {
     header {padding-top: 15px;}
@@ -338,22 +379,14 @@ footer h5 {
 
   }
 
-@media screen and (max-width: 900px) {
-header {
-    width: 100%;
-    height: auto;
-    position: relative;
-    
-}
 
-header li a {
-    float: left;
-    padding: 15px;
-}
 
 div.content {margin-left: 0;}
 
 footer {margin-left: 0%;}
+
+.row { grid-template-columns: 1fr;}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -362,11 +395,3 @@ header li a {
     float: none;
 }
 }
-
-
-@media screen and (max-width: 1024px) { 
-    .background {
-      left: 50%;
-      margin-left: -512px;
-    }
-  }
