@@ -5,51 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>  
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>All About: Ryan Lee</title>
+    <title>About: Ryan Lee</title>
 </head>
 
 
 <body>
     <div id="background"></div>
-        <header>
-            <h1>
-                Ryan Lee
-            </h1>
-            <nav>
-                <ul class="nav">
-                    <li><a href="#section1">
-                        <strong>About Me</strong>
-                        <small>Who am I?</small>
-                    </a></li>
-
-                    <li>
-                        <a href="#section2">
-                            <strong>Work</strong>
-                            <small>What I've done.</small>
-
-                            <!-- <ul>
-                                List of works I can link to right from the nav bar. WIP/Experimental 
-                                <li><a href="#">Work 1</a></li>
-                                <li><a href="#">Work 2</a></li>
-                                <li><a href="#">Work 3</a></li>
-                                <li><a href="#">Work 4</a></li>
-                            </ul> -->
-                        </a>
-                    </li>
-
-                    <li><a href="#section3">
-                        <strong>Contacts</strong>
-                        <small>Find me elsewhere.</small>
-                    </a></li>
-
-                    <li><a href="#">
-                        <strong>Resume</strong>
-                        <small>What can I do?</small>
-                    </a></li>
-                </ul><!-- close "nav" -->
-            </nav><!-- close navbar buttons -->
-        </header><!-- close header/navbar -->
+    <header>
+        <nav class="sidenavi">
+        <h1>Ryan Lee</h1>
+            <ul>
+                <a href="#section1"> 
+                    <strong>About Me</strong>
+                    <small>Who am I?</small>
+                </a>
+                <a href="#section2"> 
+                    <strong>Work</strong>
+                    <small>What I've done.</small>
+                </a>
+                <a href="#section3"> 
+                    <strong>Contacts</strong>
+                    <small>Find me elsewhere.</small> 
+                </a>
+                <a href="./assets/resume.pdf">
+                    <strong>Resume</strong>
+                    <small>What can I do?</small>
+                </a> 
+            </ul>
+        </nav>
+    </header>
 
         <main>
             <section class="section about-me" id="section1">
@@ -64,7 +52,7 @@
                             <br/>
                             I am currently a part of UCSD Extension's Coding Bootcamp, learning and aspiring to be a web developer/coder. 
                             <br/>
-                            I hope to be able to merge both experiences together and be able to make something out of it.
+                            I aim to be able to merge both experiences together and be able to make something out of it.
                         </span>
                     </div> <!-- close section heading -->
                     <div class="left-image-post">
@@ -78,7 +66,7 @@
                                 <div class="right-text">
                                     <h4> Where I'm From </h4>
                                     <p>
-                                        I was born in Los Angeles, however, due to school and various other circumstances, moved to San Diego and am currently living in San Diego.
+                                        I was born in Los Angeles, however, due to school and various other circumstances, I moved to and am currently living in San Diego.
                                     </p>
                                 </div><!-- close right text -->
                             </div><!-- close col-md-6 -->
@@ -89,9 +77,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="left-text">
-                                    <h4> Interests </h4>
+                                    <h4> Brand Statement </h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+                                        Web developer with linguistics background looking to improve and facilitate better interactions with machine and software. Recently completed a certificate in full stack development from UCSD’s Coding Bootcamp, with skills in HTML, Javascript, CSS, and mobile-first and responsive web design. Known to be very thorough, especially with fulfilling expectations of acceptance criteria. Strengths in flexible thinking, communication, and organizing projects for a smoother workflow. Recently developed a web application in a group of 5 using agile development. Regularly adapted the application based on usability feedback, allowing for a much better UX from end users. A goal-oriented mentality along with a desire for thorough research and development with organization skills to smooth out workflow makes me a valuable addition to any group or organization.
                                     </p>
                                 </div><!-- close right text -->
                             </div><!-- close col-md-6 -->
@@ -113,41 +101,41 @@
                         <span>
                             Currently learning in UCSD's Coding Bootcamp. Skillsets so far include: HTML, CSS, and Javascript.
                         </span>
+                        <br/>
+                        <span class="small"> Click on the card to see the code!</span>
                     </div> <!-- close section heading -->
                     
-                    <a href="https://github.com/Damaximum/CBC-Code_Refactory">
+                    <a href="https://github.com/Damaximum/CBC-Portfolios">
                         <div class="col-md-6">
                             <div class="items-done">
                                 <div class="first-work work-img"></div>
                                 <h4> HTML and CSS</h4>
                                 <p>
-                                    The first big work done with CSS and HTML I have done, is a refactory of a demo website given to me by Coding Bootcamp. 
-                                    <br/>
-                                    <a href="https://github.com/Damaximum/CBC-Portfolio">The second is this portfolio website.</a>
+                                    My first actual big work with HTML and CSS is this portfolio. It was created from scratch by me.
                                 </p>
                             </div> <!-- close items-done -->
                         </div> <!-- close col-md-6 -->
                     </a>
                     
                     <div class="row">
-                        <a href="https://github.com/Damaximum/CBC-Password_Generator">
+                        <a href="https://github.com/Damaximum/CBC-Code-Quiz">
                             <div class="col-md-6">
                                 <div class="items-done">
                                     <div class="second-work work-img"></div>
                                     <h4> Javascript </h4>
                                     <p>
-                                        I have a great understanding of JAvascript. To give a demonstration, this is a password generator I have coded, as part of Coding Bootcamp.
+                                        I have developed a great understanding of Javascript. As a demonstration, this is a Coding Quiz I have coded, as part of Coding Bootcamp. It is run entirely by Javascript.
                                     </p>
                                 </div><!-- close items-done -->
                             </div> <!-- close col-md-6 -->
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/Damaximum/Productivity-Hub">
                             <div class="col-md-6">
                                 <div class="items-done">
                                     <div class="third-work work-img"></div>
-                                    <h4> NODE </h4>
+                                    <h4> API Project - Productivity Hub </h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+                                        This is a demonstration of what I've learned and mastered in the Coding Bootcamp. It had challenged what I've learned as well as my creativity and communication skills. 
                                     </p>
                                 </div> <!-- close items-done -->
                             </div><!-- close col-md-6 -->
@@ -156,7 +144,7 @@
                             <div class="col-md-6">
                                 <div class="items-done">
                                     <div class="fourth-work work-img"></div>
-                                    <h4> React </h4>
+                                    <h4> NODE </h4>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
                                     </p>
@@ -167,7 +155,7 @@
                             <div class="col-md-6">
                                 <div class="items-done">
                                     <div class="fifth-work work-img"></div>
-                                    <h4> TBD </h4>
+                                    <h4> React </h4>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
                                     </p>
@@ -225,5 +213,9 @@
             <h5>Made by Ryan Lee in HTML, CSS, and Javascript</h5>
         </footer>
     </div><!-- close background -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

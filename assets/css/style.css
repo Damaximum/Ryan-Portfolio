@@ -7,11 +7,14 @@
     --highlight: #e67e22;
 }
 
-  /* Nav bar settings. Creates a fixed, full height nav bar on the right. */
+/* Nav bar settings. Creates a fixed, full height nav bar on the right. */
+nav {
+    line-height: 30px;
+}
 
-header {
+.sidenavi {
     height: 100%;
-    width: 250px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -21,30 +24,32 @@ header {
     padding-top: 60px;
 }
 /* Styling the h1 and rest of the nav bar. */
-header h1 {
+.sidenavi h1 {
     padding: 8px 8px 32px 32px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     display: block;
 }
 
-nav a strong {
-    padding: 8px;
+.sidenavi a strong {
+    padding: 0px 8px;
     text-decoration: none;
     font-size: 25px;
     color: var(--navtextcolour);
     display: block;
+    text-align: right;
 }
 
-nav li a small {
+.sidenavi a small {
     display: block;
-    font: 10px;
+    font-size: 1rem;
     opacity: 0.5;
+    text-align: right;
 }
 
- /* stylises all [a] and [worklist] class in nav */
-nav a, .nav {
+/* stylises all [a] and [worklist] class in nav */
+.sidenavi a, .navi {
     display: block;
     color: var(--navtextcolour);
     text-align: right;
@@ -52,13 +57,17 @@ nav a, .nav {
     text-decoration: none;
 }
 /* Colour change when links are hovered over. */
-nav a:hover {
+.sidenavi a:hover {
     display: block;
     color: black;
     background-color: var(--cardtrans);
     border-right: 6px solid var(--highlight);
 }
 
+main {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
 /* ===================================================================================== */
 /* Background wallpaper */
 #background {
@@ -126,9 +135,6 @@ html {
 /* Section */
 .section {
     color: var(--cardtxt);
-    width: 55%;
-    right: 10%;
-    left: 35%;
     position: relative;
     min-height: 100vh;
     padding-bottom: 80px;
