@@ -20,10 +20,10 @@ Link to the GitHub Page: https://damaximum.github.io/CBC-Portfolio/
 # Screenshots
 
 About Me:
-![Alt text](./screenshots/1_-_About_me?raw=true "About Me")
+![Alt text](./screenshots/1-AboutMe.png?raw=true "About Me")
 
 My Works: 
-![Alt text](./screenshots/2_-_My_works?raw=true "My Works")
+![Alt text](./screenshots/2-2-MyWorks.png?raw=true "My Works")
 
 My Contacts: 
-![Alt text](./screenshots/3_-_Contacts.png?raw=true "My Contacts")
+![Alt text](./screenshots/3-Contacts.png?raw=true "My Contacts")
