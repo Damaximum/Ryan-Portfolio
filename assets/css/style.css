@@ -1,37 +1,69 @@
 :root {
     --maincolor: rgb(59, 59, 59);
     --navtextcolour: rgb(128, 128, 128);
-    --cardbg: rgba(250, 250, 250, 0.1);
+    --cardbg: rgba(250, 250, 250, 0.15);
     --cardtxt: rgb(255, 251, 214);
-    --cardtrans: rgba(250, 250, 250, 1);
+    --cardtrans: rgba(250, 250, 250);
     --highlight: #e67e22;
 }
 
-/* Nav bar settings. Creates a fixed, full height nav bar on the right. */
+/* ---------------------------------Background Wall Paper------------------------------------------ */
+#background {
+    background: url(../images/wallpaper-space.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+/* ---------------------------------Background Wall Paper------------------------------------------ */
 nav {
     line-height: 30px;
 }
-
+/* ----------------------------Side Navigation-------------------------------- */
+/* The sidebar menu */
+.top-nav {
+    height: 110px;
+    background-color: var(--maincolor);
+}
 .sidenavi {
-    height: 100%;
-    width: 200px;
-    position: fixed;
+    /* height: 100%; */
+    width: 200px; 
+    /* position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: 0; */
     background-color: var(--maincolor);
-    overflow-x: hidden;
-    padding-top: 60px;
+    /* overflow-x: hidden;
+    padding-top: 20px; */
 }
-/* Styling the h1 and rest of the nav bar. */
-.sidenavi h1 {
-    padding: 8px 8px 32px 32px;
+
+/* The navigation menu links */
+.sidenavi li a {
+    padding: 6px 8px 0px 16px;
     text-decoration: none;
-    font-size: 40px;
-    color: white;
+    font-size: 25px;
+    color: var(--navtextcolour);
     display: block;
 }
 
+/* When you mouse over the navigation links, change their color */
+.sidenavi li a:hover {
+    color: var(--cardtrans);
+    border-right: 6px solid var(--highlight);
+}
+
+/* Side nav header */
+.sidenavi h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* small and strong content styling */
 .sidenavi a strong {
     padding: 0px 8px;
     text-decoration: none;
@@ -48,252 +80,83 @@ nav {
     text-align: right;
 }
 
-/* stylises all [a] and [worklist] class in nav */
-.sidenavi a, .navi {
-    display: block;
-    color: var(--navtextcolour);
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-/* Colour change when links are hovered over. */
-.sidenavi a:hover {
-    display: block;
-    color: black;
-    background-color: var(--cardtrans);
-    border-right: 6px solid var(--highlight);
-}
-
-main {
+/* Style page content */
+/* .main {
     margin-left: 200px;
     padding: 0px 10px;
-}
-/* ===================================================================================== */
-/* Background wallpaper */
-#background {
-    background: url(../images/wallpaper-space.jpg) no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+} */
 
-/* basic stuff */
-body {
-    overflow-x: hidden;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-    display: block;
-}
-
-a:visited {
-    color: inherit;
-}
-
-p {
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--cardtxt);
-}
-
-h4 {
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--cardtxt);
-    letter-spacing: 0.25px;
-}
-
-img {
-    width: 30%;
-    overflow: hidden;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-ul li {
-    display: inline-block;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-/* Section */
-.section {
-    color: var(--cardtxt);
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 80px;
-    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
-}
-
-.section-heading {
-    text-align: center;
-    padding: 80px 45px;
-}
-
-.section-heading h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--cardtxt);
-}
-
-.section-heading .line-dec {
-    width: 60px;
-    height: 3px;
-    background-color: var(--highlight);
-    margin: 10px auto;
-}
-
-.section-heading span {
-    margin-top: 5px;
-    font-size: 16px;
-    color: var(--cardtxt);
-    letter-spacing: 0.5px;
-}
-/* Image Post */
-
-.right-image-post {
-    margin-top: 60px;
-    padding-top: 60px;
-    border-top: 2px solid var(--cardbg);
-}
-
-.right-image img {
-    width: 100%;
-}
-
-.left-image img,
-.right-image img {
-    border-radius: 5px;
-}
-
-.right-image-post h4,
-.left-image-post h4 {
-    margin-top: 30px;
-}
-
-.right-image-post p,
-.left-image-post p {
-    margin-top: 20px;
-}
-
-
-/* Works */
-
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.my-work .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar */
+@media screen and (max-width: 450px) {
+    /* .sidenavi {
+        width: 100%;
+        height: 100px;
+    } */
+    .sidenavi a {font-size: 18px;}
+    .main {
+        margin-left: 0px;
+    }
+} 
+/* ----------------------------End Side Navigation-------------------------------- */
 
 .items-done {
     margin-bottom: 10px;
     padding: 50px;
     background-color: var(--cardbg);
-    transition: all 0.5s;
+    transition: all 0.2s;
+    color: var(--cardtrans);
 }
 
-.items-done h4 {
-    transition: all 0.5s;
+.items-done h2 {
+    transition: all 0.2s;
 }
 
 .items-done p {
-    transition: all 0.5s;
+    transition: all 0.2s;
+}
+
+.items-done h4 {
+    transition: all 0.2s;
 }
 
 .items-done:hover {
     background-color: var(--cardtrans);
+    opacity: 0.5;
 }
 
-.items-done:hover h4 {
-    color: #1e1e1e;
+.items-done:hover h2 {
+    color: var(--maincolor);
 }
 
 .items-done:hover p {
     color: var(--maincolor);
 }
 
-.items-done .work-img {
-    width: 70px;
-    height: 70px;
+/* .items-done .work-img {
+    width: 100px;
+    height: 100px;
     display: inline-block;
     margin-bottom: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s;
-}
+} */
 
-.first-work { 
-    width: 100%;
-    display: block;
-}
-
-.first-work a {
-    color: var(--highlight);
-}
-
-/* My work items images. */
-
-.items-done .first-work {
-    background-image: url(../images/work1.jpg);
-}
-
-.items-done .second-work {
-    background-image: url(../images/work2.jpg);
-}
-
-.items-done .third-work {
-    background-image: url(../images/work3.jpg);
-}
-
-.items-done .fourth-work {
-    background-image: url(../images/work4.jpg);
-}
-
-.items-done .fifth-work {
-    background-image: url(../images/6\ -\ Wkm9QFO.jpg);
-}
-
-    /* contact */
-
-
-.contact .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
 
 .contactlist {
     margin-bottom: 10px;
     padding: 50px;
     background-color: var(--cardbg);
-    transition: all 0.5s;
+    transition: all 0.2s;
+    height: 200px;
 }
 
 .contactlist h4 {
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .contactlist p {
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .contactlist:hover {
@@ -309,95 +172,14 @@ html {
 }
 
 
-
-
-
-/*===================================================================================== */
-
-/* Footer Styling */
-
-footer {
-    width: 100%;
-    position: fixed;
-    margin-left: 250px;
-    z-index: 2;
-    bottom: 0;
-    background-color: var(--highlight);
-    padding: 0px;
-    height: 10px;
+.card {
+    background-color: var(--cardbg);
 }
 
-footer h5 {
-    text-align: center;
-    font-size: 10px;
-    text-decoration: none;
-    display: block;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+.card-reveal {
+    background-color: var(--maincolor) !important;
 }
 
-/*===================================================================================== */
-
-@media screen and (max-width: 1280px) {
-
-    .right-image-post h4,
-    .left-image-post h4 {
-        margin-top: 0px;
-    }
-
-    .right-image-post p,
-    .left-image-post p {
-        margin-top: 15px;
-    }
-
-}
-
-.container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media screen and (max-width: 1024px) { 
-    .background {
-      left: 50%;
-      margin-left: -512px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    header {
-        width: 100%;
-        height: auto;
-        position: relative;
-        
-    }
-    
-    header li a {
-        float: left;
-        padding: 15px;
-    }
-
-@media screen and (max-height: 450px) {
-    header {padding-top: 15px;}
-    header h1 {font: 32px;}
-    header a {font-size: 18px;}
-
-  }
-
-
-
-div.content {margin-left: 0;}
-
-footer {margin-left: 0%;}
-
-.row { grid-template-columns: 1fr;}
-
-}
-
-@media screen and (max-width: 400px) {
-header li a {
-    text-align: center;
-    float: none;
-}
+.hidden {
+    display: none;
 }

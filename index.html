@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>  
@@ -14,11 +13,67 @@
 
 
 <body>
-    <div id="background"></div>
-    <header>
-        <nav class="sidenavi">
-        <h1>Ryan Lee</h1>
-            <ul>
+    <div id="background" >
+        <!-- Side navigation -->
+        <header>
+            <nav class="top-nav">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 m10 offset-m2">
+                                <h1 class="header">Ryan Lee</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <a href="#" class="top-nav sidenav-trigger full hide-on-large-only" data-target="nav-mobile">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <ul class="sidenav sidenav-fixed sidenavi" id="nav-mobile">
+                <br/>
+                <br/>
+                <br/>
+                <li class="bold">
+                    <a href="#section1" class="waves-effect waves-light">About Me</a>
+                </li>
+                <li class="bold">
+                    <a href="#section2" class="waves-effect waves-light">My Works</a>
+                </li>
+                <li class="bold">
+                    <a href="#section3" class="waves-effect waves-light">Contacts</a>
+                </li>
+                <li class="bold">
+                    <a href="./assets/resume.pdf" class="waves-effect waves-light">Resume</a>
+                </li>
+            </ul>
+            <!-- <nav class="sidenavi sidenav sidenav-fixed" id="desktop-links">
+                <a href="#" class="brand-logo large right">Ryan Lee</a>
+                <a href="" class="sidenav-trigger hide-on-large-only full top-nav" data-target="mobile-links"><i class="material-icons">menu</i></a>
+                <br/>
+                <br/>
+                <ul class="hide-on-med-and-down">
+                    <a href="#section1"> 
+                        <strong>About Me</strong>
+                        <small>Who am I?</small>
+                    </a>
+                    <a href="#section2"> 
+                        <strong>Work</strong>
+                        <small>What I've done.</small>
+                    </a>
+                    <a href="#section3"> 
+                        <strong>Contacts</strong>
+                        <small>Find me elsewhere.</small> 
+                    </a>
+                    <a href="./assets/resume.pdf">
+                        <strong>Resume</strong>
+                        <small>What can I do?</small>
+                    </a> 
+                </ul>
+            </nav>
+            <ul class="side-nav hide-on-large-only sidenav-fixed" id="mobile-links">
                 <a href="#section1"> 
                     <strong>About Me</strong>
                     <small>Who am I?</small>
@@ -35,184 +90,147 @@
                     <strong>Resume</strong>
                     <small>What can I do?</small>
                 </a> 
-            </ul>
-        </nav>
-    </header>
-
-        <main>
-            <section class="section about-me" id="section1">
-                <div class="container">
-                    <div class="section-heading">
-                        <h2> About Me </h2>
-                        <div class="line-dec"></div>
-                        <span>
-                            Hello, my name is Ryan Lee. 
+            </ul> -->
+        </header>
+        <!-- Main portion of the webpage -->
+        <main class="main">
+            <div class="container center-align" id="section1">
+                <h2 class="white-text"> About Me </h2>
+                <div class="divider"></div>
+                <p class="white-text">
+                    Hello, my name is Ryan Lee. 
                             <br/>
                             I am a graduate of University of California, San Diego, with a Bachelor's in Linguistics.
                             <br/>
                             I am currently a part of UCSD Extension's Coding Bootcamp, learning and aspiring to be a web developer/coder. 
                             <br/>
                             I aim to be able to merge both experiences together and be able to make something out of it.
-                        </span>
-                    </div> <!-- close section heading -->
-                    <div class="left-image-post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="left-image">
-                                    <img src="./assets/images/headshot.jpg" alt="My face"/>
-                                </div><!-- close left-image  -->
-                            </div><!-- close close col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="right-text">
-                                    <h4> Where I'm From </h4>
-                                    <p>
-                                        I was born in Los Angeles, however, due to school and various other circumstances, I moved to and am currently living in San Diego.
-                                    </p>
-                                </div><!-- close right text -->
-                            </div><!-- close col-md-6 -->
-                        </div><!-- close row -->
-                    </div><!-- close image-post -->
-
-                    <div class="right-image-post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="left-text">
-                                    <h4> Brand Statement </h4>
-                                    <p>
-                                        Web developer with linguistics background looking to improve and facilitate better interactions with machine and software. Recently completed a certificate in full stack development from UCSD’s Coding Bootcamp, with skills in HTML, Javascript, CSS, and mobile-first and responsive web design. Known to be very thorough, especially with fulfilling expectations of acceptance criteria. Strengths in flexible thinking, communication, and organizing projects for a smoother workflow. Recently developed a web application in a group of 5 using agile development. Regularly adapted the application based on usability feedback, allowing for a much better UX from end users. A goal-oriented mentality along with a desire for thorough research and development with organization skills to smooth out workflow makes me a valuable addition to any group or organization.
-                                    </p>
-                                </div><!-- close right text -->
-                            </div><!-- close col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="right-image">
-                                    <img src="./assets/images/5 - TAVhU6f.jpg">
-                                </div><!-- close left-image  -->
-                            </div><!-- close close col-md-6 -->
-                        </div><!-- close row -->
-                    </div><!-- close image-post -->
-                </div><!-- close container -->
-            </section>
-
-            <section class="section my-work" id="section2">
-                <div class="container">
-                    <div class="section-heading">
-                        <h2> What I've Done </h2>
-                        <div class="line-dec"></div>
-                        <span>
-                            Currently learning in UCSD's Coding Bootcamp. Skillsets so far include: HTML, CSS, and Javascript.
-                        </span>
-                        <br/>
-                        <span class="small"> Click on the card to see the code!</span>
-                    </div> <!-- close section heading -->
-                    
-                    <a href="https://github.com/Damaximum/CBC-Portfolios">
-                        <div class="col-md-6">
-                            <div class="items-done">
-                                <div class="first-work work-img"></div>
-                                <h4> HTML and CSS</h4>
+                </p>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/headshot.jpg" width="80px" height="450px">
+                                <span class="card-title"> Where I'm From </span>
+                            </div>
+                            <div class="card-content white-text">
                                 <p>
-                                    My first actual big work with HTML and CSS is this portfolio. It was created from scratch by me.
-                                </p>
-                            </div> <!-- close items-done -->
-                        </div> <!-- close col-md-6 -->
-                    </a>
-                    
-                    <div class="row">
-                        <a href="https://github.com/Damaximum/CBC-Code-Quiz">
-                            <div class="col-md-6">
-                                <div class="items-done">
-                                    <div class="second-work work-img"></div>
-                                    <h4> Javascript </h4>
-                                    <p>
-                                        I have developed a great understanding of Javascript. As a demonstration, this is a Coding Quiz I have coded, as part of Coding Bootcamp. It is run entirely by Javascript.
-                                    </p>
-                                </div><!-- close items-done -->
-                            </div> <!-- close col-md-6 -->
-                        </a>
-                        <a href="https://github.com/Damaximum/Productivity-Hub">
-                            <div class="col-md-6">
-                                <div class="items-done">
-                                    <div class="third-work work-img"></div>
-                                    <h4> API Project - Productivity Hub </h4>
-                                    <p>
-                                        This is a demonstration of what I've learned and mastered in the Coding Bootcamp. It had challenged what I've learned as well as my creativity and communication skills. 
-                                    </p>
-                                </div> <!-- close items-done -->
-                            </div><!-- close col-md-6 -->
-                        </a>
-                        <a href="#">
-                            <div class="col-md-6">
-                                <div class="items-done">
-                                    <div class="fourth-work work-img"></div>
-                                    <h4> NODE </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
-                                    </p>
-                                </div><!-- close items-done -->
-                            </div><!-- close col-md-6 -->
-                        </a>
-                        <a href="#">
-                            <div class="col-md-6">
-                                <div class="items-done">
-                                    <div class="fifth-work work-img"></div>
-                                    <h4> React </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
-                                    </p>
-                                </div><!-- close items-done -->
-                            </div><!-- close col-md-6 -->
-                        </a>
-                    </div><!-- close row -->
-                </div><!-- close container -->
-            </section><!-- close my-work -->
-            <section class="section contact" id="section3">
-                <div class="container">
-                    <div class="section-heading">
-                        <h2> Contact </h2>
-                        <div class="line-dec"></div>
-                        <span>
-                            Come find more about me elsewhere!
-                        </span>
-                    </div><!-- close section-heading -->
-                    <div class="row2">
-                        <div class="col-md-6">
-                            <div class="contactlist">
-                                <h4> Phone Number </h4>
-                                <p>
-                                    213 - 392 - 2227
+                                    I was born in Los Angeles, however, due to school and various other circumstances, I moved to and am currently living in San Diego.
                                 </p>
                             </div>
-                        </div> <!-- close col-md-6 -->
-                        <a href="mailto:ryanlee059@gmail.com">
-                            <div class="col-md-6">
-                                <div class="contactlist">
-                                    <h4> Email </h4>
-                                </div>
-                            </div> <!-- close col-md-6 -->
-                        </a>
-                        <a href="https://github.com/Damaximum">
-                            <div class="col-md-6">
-                                <div class="contactlist">
-                                    <h4> GitHub </h4>
-                                </div>
-                            </div> <!-- close col-md-6 -->
-                        </a>
-                        <a href="https://www.linkedin.com/in/ryan-lee-1a8715207/">
-                            <div class="col-md-6">
-                                <div class="contactlist">
-                                    <h4> LinkedIn </h4>
-                                </div>
-                            </div> <!-- close col-md-6 -->
-                        </a>
-                    </div> <!-- close row -->
-                </div><!-- close container -->
-            </section><!-- close contact -->
+                        </div>
+                    </div> <!-- End of About Me card 1-->
+                    <div class="col s12 m8"> 
+                        <div class="card"> 
+                            <div class="card-content">
+                                <span class="card-title activator white-text text-darken-4"> Brand Statement </span>
+                                <p class="small white-text"> click the image for more </p>
+                            </div>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator circle" src="./assets/images/5 - TAVhU6f.jpg" width="80px" height="450px">                                
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator white-text text-darken-4"> Brand Statement </span>
+                                <p class="white-text text-darken-4">
+                                    Web developer with linguistics background looking to improve and facilitate better interactions with machine and software. Recently completed a certificate in full stack development from UCSD’s Coding Bootcamp, with skills in HTML, Javascript, CSS, and mobile-first and responsive web design. Known to be very thorough, especially with fulfilling expectations of acceptance criteria. Strengths in flexible thinking, communication, and organizing projects for a smoother workflow. Recently developed a web application in a group of four using agile development. Regularly adapted the application based on usability feedback, allowing for a much better UX from end users. A goal-oriented mentality along with a desire for thorough research and development with organization skills to smooth out workflow makes me a valuable addition to any group or organization.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- End of About me card 2 -->
+                </div>
+            </div> <!-- End of About Me Container -->
+            <div class="container center-align" id="section2">
+                <h2 class="white-text"> My Works </h2>
+                <div class="divider"></div>
+                <p class="white-text">
+                    Currently learning in UCSD's Coding Bootcamp. Skillsets so far include: HTML, CSS, Javascript, APIs, and Node.
+                </p>
+                <br/>
+                <div class="carousel carousel-slider center">
+                    <div class="carousel-fixed-item center middle-indicator">
+                        <div class="left">
+                         <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+                        </div>
+                        
+                        <div class="right">
+                        <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+                        </div>
+                       </div>
+                    <div class="carousel-item items-done" href="#one!">
+                        <!-- <img src="./assets/images/work1.jpg" class="work-img"> -->
+                        <h2>HTML/CSS</h2>
+                        <p> My first actual big work with HTML and CSS is this portfolio. It was created from scratch by me.</p>
+                        <h4><a href="https://github.com/Damaximum/CBC-Portfolio"> Portfolio Github </a></h4>
+                    </div>
+                    <div class="carousel-item items-done" href="#two!">
+                        <!-- <img src="./assets/images/work2.jpg" class="work-img"> -->
+                        <h2>Javascript</h2>
+                        <p>I have developed a great understanding of Javascript. As a demonstration, this is a Coding Quiz I have coded, as part of Coding Bootcamp. It is run entirely by Javascript.</p>
+                        <h4><a href="https://github.com/Damaximum/CBC-Code-Quiz"> Coding Quiz Github </a></h4>
+                    </div>
+                    <div class="carousel-item items-done" href="#three!">
+                        <!-- <img src="./assets/images/work3.jpg" class="work-img"> -->
+                        <h2>API Project - Productivity Hub</h2>
+                        <p>This is a demonstration of what I've learned and mastered in the Coding Bootcamp. It had challenged what I've learned as well as my creativity and communication skills. </p>
+                        <h4><a href="https://github.com/Damaximum/Productivity-Hub"> Productivity Hub Github </a></h4>
+                    </div>
+                    <div class="carousel-item items-done" href="#four!">
+                        <!-- <img src="./assets/images/work4.jpg" class="work-img"> -->
+                        <h2>NODE</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
+                    </div>
+                    <div class="carousel-item items-done" href="#five!">
+                        <!-- <img src="./assets/images/work4.jpg" class="work-img"> -->
+                        <h2>React</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
+                    </div>
+                </div>
+            </div> <!-- End of My Works Container -->
+            <div class="container center-align" id="section3">
+                <div class="section-heading">
+                    <h2 class="white-text"> Contact </h2>
+                    <div class="divider"></div>
+                    <span class="white-text">
+                        Come find more about me elsewhere!
+                    </span>
+                </div><!-- close section-heading -->
+                <br/>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="white-text contactlist">
+                            <h4> Phone Number </h4>
+                            <p>
+                                213 - 392 - 2227
+                            </p>
+                        </div>
+                    </div> <!-- close phone number -->
+                    <a href="mailto:ryanlee059@gmail.com">
+                        <div class="col s12 m6">
+                            <div class="white-text contactlist">
+                                <h4> Email </h4>
+                                <br/><br/>
+                            </div>
+                        </div> <!-- close email -->
+                    </a> <!-- Close Email -->
+                    <a href="https://github.com/Damaximum">
+                        <div class="col s12 m6">
+                            <div class="white-text contactlist">
+                                <h4> GitHub </h4>
+                            </div>
+                        </div> <!-- close github -->
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-lee-1a8715207/">
+                        <div class="col s12 m6">
+                            <div class="white-text contactlist">
+                                <h4> LinkedIn </h4>
+                            </div>
+                        </div> <!-- close linkedin -->
+                    </a>
+                </div> <!-- close row -->
+            </div><!-- close container -->
         </main>
-
-        <footer>
-            <h5>Made by Ryan Lee in HTML, CSS, and Javascript</h5>
-        </footer>
     </div><!-- close background -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
