@@ -1,4 +1,3 @@
-
 # Coding Bootcamp Week 2: Homework #2 - Portfolio
 
 This is the personal portfolio of Ryan Lee.
@@ -15,15 +14,15 @@ After the homework, I hope and plan to keep this updated for my own personal use
 
 ## Links
 
-Link to the GitHub Page: https://damaximum.github.io/CBC-Portfolio/
+[Link to the GitHub Page](https://damaximum.github.io/Ryan-Portfolio/)
 
 # Screenshots
 
 About Me:
 ![Alt text](./screenshots/1-AboutMe.png?raw=true "About Me")
 
-My Works: 
+My Works:
 ![Alt text](./screenshots/2-MyWorks.png?raw=true "My Works")
 
-My Contacts: 
+My Contacts:
 ![Alt text](./screenshots/3-Contacts.png?raw=true "My Contacts")
